@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:camera/camera.dart';
 import 'package:geolocator/geolocator.dart';
@@ -143,7 +144,7 @@ class _ReportIssueModalState extends State<ReportIssueModal> {
           .child(issueId)
           .child('photo.jpg');
           
-      await storageRef.putFile(File(_capturedPhoto!.path));
+      await storageRef.putData(await _capturedPhoto!.readAsBytes());
       final photoUrl = await storageRef.getDownloadURL();
 
       // 2. Polish description with AI Text Polish Agent
@@ -341,10 +342,15 @@ class _ReportIssueModalState extends State<ReportIssueModal> {
                       children: [
                         Positioned.fill(
                           child: _capturedPhoto != null
-                              ? Image.file(
-                                  File(_capturedPhoto!.path),
-                                  fit: BoxFit.cover,
-                                )
+                              ? (kIsWeb
+                                  ? Image.network(
+                                      _capturedPhoto!.path,
+                                      fit: BoxFit.cover,
+                                    )
+                                  : Image.file(
+                                      File(_capturedPhoto!.path),
+                                      fit: BoxFit.cover,
+                                    ))
                               : (_isCameraInitialized && _cameraController != null
                                   ? CameraPreview(_cameraController!)
                                   : const Center(

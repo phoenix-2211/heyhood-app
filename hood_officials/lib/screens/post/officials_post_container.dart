@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:camera/camera.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -456,10 +457,15 @@ class _OfficialsPostContainerState extends State<OfficialsPostContainer> {
               children: [
                 Positioned.fill(
                   child: _capturedProofPhoto != null
-                      ? Image.file(
-                          File(_capturedProofPhoto!.path),
-                          fit: BoxFit.cover,
-                        )
+                      ? (kIsWeb
+                          ? Image.network(
+                              _capturedProofPhoto!.path,
+                              fit: BoxFit.cover,
+                            )
+                          : Image.file(
+                              File(_capturedProofPhoto!.path),
+                              fit: BoxFit.cover,
+                            ))
                       : (_isCameraInitialized && _cameraController != null
                           ? CameraPreview(_cameraController!)
                           : const Center(
@@ -668,7 +674,7 @@ class _OfficialsPostContainerState extends State<OfficialsPostContainer> {
                     .child(issueId)
                     .child('proof.jpg');
                     
-                await storageRef.putFile(File(_capturedProofPhoto!.path));
+                await storageRef.putData(await _capturedProofPhoto!.readAsBytes());
                 final proofUrl = await storageRef.getDownloadURL();
 
                 // 2. Resolve issue in Firestore
