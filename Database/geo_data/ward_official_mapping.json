@@ -1,0 +1,30 @@
+{
+  "TN-CHN-100": {
+    "councillor_id": "GCC-WC-100",
+    "zone_officer_id": "GCC-ZONE-10",
+    "mla_id": "TN-MLA-100",
+    "mp_id": "IND-MP-CHN-SOUTH",
+    "collector_id": "TN-DC-CHN"
+  },
+  "TN-CHN-108": {
+    "councillor_id": "GCC-WC-108",
+    "zone_officer_id": "GCC-ZONE-10",
+    "mla_id": "TN-MLA-108",
+    "mp_id": "IND-MP-CHN-SOUTH",
+    "collector_id": "TN-DC-CHN"
+  },
+  "TN-CHN-173": {
+    "councillor_id": "GCC-WC-173",
+    "zone_officer_id": "GCC-ZONE-08",
+    "mla_id": "TN-MLA-173",
+    "mp_id": "IND-MP-CHN-CENTRAL",
+    "collector_id": "TN-DC-CHN"
+  },
+  "TN-CHN-057": {
+    "councillor_id": "GCC-WC-057",
+    "zone_officer_id": "GCC-ZONE-09",
+    "mla_id": "TN-MLA-057",
+    "mp_id": "IND-MP-CHN-SOUTH",
+    "collector_id": "TN-DC-CHN"
+  }
+}

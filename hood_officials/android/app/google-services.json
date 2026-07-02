@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "269763727222",
+    "project_id": "hey-hood-prod",
+    "storage_bucket": "hey-hood-prod.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269763727222:android:37f303c5294f4035003457",
+        "android_client_info": {
+          "package_name": "com.example.hey_hood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDetZVdCC3x0PGg_ZuUw2JXZwVScVGoWjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269763727222:android:6196d6f4778c665b003457",
+        "android_client_info": {
+          "package_name": "com.example.hood_officials"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDetZVdCC3x0PGg_ZuUw2JXZwVScVGoWjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

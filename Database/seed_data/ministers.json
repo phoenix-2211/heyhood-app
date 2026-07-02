@@ -1,0 +1,352 @@
+[
+  {
+    "official_id": "TN-MIN-01",
+    "name": "Thiru C. Joseph Vijay",
+    "designation": "Honourable Chief Minister",
+    "portfolio": "Public, General Administration, Indian Administrative Service, Indian Police Service, Indian Forest Service, District Revenue Officers, Police, Home, Special Programme Implementation, Special Initiatives, Poverty Alleviation and Rural Indebtedness, Youth Welfare, Welfare of Children, Aged, Differently Abled Persons, Municipal Administration, Urban and Water Supply.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-02",
+    "name": "Thiru N. Anand",
+    "designation": "Minister for Rural Development and Water Resources",
+    "portfolio": "Rural Development, Panchayats and Panchayat Union, Irrigation, Irrigation Projects including Small Irrigation.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-03",
+    "name": "Thiru Aadhav Arjuna",
+    "designation": "Minister for Public Works and Sports Development",
+    "portfolio": "Public Works (Buildings, Highways and Minor Ports), Sports Development.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-04",
+    "name": "Dr. K.G. Arunraj",
+    "designation": "Minister for Health, Medical Education and Family Welfare",
+    "portfolio": "Health, Medical Education and Family Welfare.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-05",
+    "name": "Thiru K A. Sengottaiyan",
+    "designation": "Minister for Revenue and Disaster Management",
+    "portfolio": "Revenue, District Revenue Establishment, Deputy Collectors, Disaster Management, Boodhan, Gramadhan and Legislative Assembly",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-06",
+    "name": "Thiru P. Venkataramanan",
+    "designation": "Minister for Food and Civil Supplies",
+    "portfolio": "Food and Civil Supplies, Consumer Protection and Price Control.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-07",
+    "name": "Thiru R. Nirmalkumar",
+    "designation": "Minister for Energy Resources and Law",
+    "portfolio": "Electricity & Non-Conventional Energy Development, Law, Courts, Prisons and Prevention of Corruption, Governor, Elections and Passports.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-08",
+    "name": "Thiru Rajmohan",
+    "designation": "Minister for School Education, Tamil Development, Information and Publicity",
+    "portfolio": "School Education, Archaeology, Tamil Official Language and Tamil Culture, Information & Publicity, Film Technology and Cinematograph Act, Newsprint Control, Stationery and Printing, Government Press.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-09",
+    "name": "Dr. TK. Prabhu",
+    "designation": "Minister for Natural Resources",
+    "portfolio": "Minerals and Mines.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-10",
+    "name": "Selvi S. Keerthana",
+    "designation": "Minister for Industries",
+    "portfolio": "Industries, Investment Promotion.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-11",
+    "name": "Thiru P. Viswanathan",
+    "designation": "Minister for Higher Education",
+    "portfolio": "Higher Education including Technical Education, Electronics, Science and Technology",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-12",
+    "name": "Thiru S. Rajesh Kumar",
+    "designation": "Minister for Tourism",
+    "portfolio": "Tourism and Tourism Development Corporation",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-13",
+    "name": "Thiru A.M. Shahjahan",
+    "designation": "Minister for Minorities Welfare",
+    "portfolio": "Minorities Welfare and Wakf Board",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-14",
+    "name": "Thiru Vanni Arasu",
+    "designation": "Minister for Social Justice",
+    "portfolio": "Adi Dravidar Welfare and Hill Tribes",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-15",
+    "name": "Thiru A. Vijay Tamilan Parthiban",
+    "designation": "Minister for Transport",
+    "portfolio": "Motor Vehicle Acts \u2013 Administration, Transport, Nationalised Transport and Motor Vehicles Act",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-16",
+    "name": "Thiru B. Rajkumar",
+    "designation": "Minister for Housing and Urban Development",
+    "portfolio": "Housing, Rural Housing, Town Planning Projects and Housing Development, Accommodation Control, CMDA, Tamil Nadu Urban Habitat Development Board, Urban Planning and Urban Development",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-17",
+    "name": "Thiru V. Sampath Kumar",
+    "designation": "Minister for Backward Classes Welfare",
+    "portfolio": "Backward Classes Welfare, Most Backward Classes Welfare and De-notified Communities Welfare",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-18",
+    "name": "Thiru M. Vijay Balaji",
+    "designation": "Minister for Handlooms, Textiles and Khadi",
+    "portfolio": "Handlooms and Textiles, Khadi and Village Industries Board",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-19",
+    "name": "Thiru K. Vignesh",
+    "designation": "Minister for Prohibition and Excise",
+    "portfolio": "Prohibition and Excise",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-20",
+    "name": "Thiru K. Thennarasu",
+    "designation": "Minister for Non-Resident Tamils Welfare",
+    "portfolio": "Non-Resident Tamils Welfare, Refugees & evacuees",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-21",
+    "name": "Thiru J. Mohamed Farvas",
+    "designation": "Minister for Labour Welfare and Skill Development",
+    "portfolio": "Labour Welfare, Population, Employment and Training, Census, Weights and Measures, Urban and Rural Employment and Bonded Labour Welfare",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-22",
+    "name": "Thiru V. Gandhiraj",
+    "designation": "Minister for Co-operation",
+    "portfolio": "Co-operation",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-23",
+    "name": "Tmt K. Jegadeshwari",
+    "designation": "Minister for Social Welfare and Women Empowerment",
+    "portfolio": "Social Welfare including Women Welfare, Orphanages and Correctional Administration and Beggar Homes and Social Reforms & Nutritious Meal Programme.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-24",
+    "name": "Thiru Vinoth",
+    "designation": "Minister for Agriculture - Farmers Welfare",
+    "portfolio": "Agriculture, Agricultural Engineering, Agro Service Co-operatives, Horticulture, Sugar, Sugarcane Excise, Sugarcane Development and Waste Land Development",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-25",
+    "name": "Tmt C. Vijayalakshmi",
+    "designation": "Minister for Milk and Dairy Development",
+    "portfolio": "Milk and Dairy Development",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-26",
+    "name": "Thiru D. Sarathkumar",
+    "designation": "Minister for Human Resources Management",
+    "portfolio": "Human Resources Management & Ex-Servicemen Welfare",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-27",
+    "name": "Thiru Ramesh",
+    "designation": "Minister for Hindu Religious and Charitable Endowments",
+    "portfolio": "Hindu Religious and Charitable Endowments",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-28",
+    "name": "Thiru P. Mathan Raja",
+    "designation": "Minister for Micro, Small and Medium Enterprises",
+    "portfolio": "Rural Industries including Cottage Industries, Small Industries.",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-29",
+    "name": "Thiru N. Marie Wilson",
+    "designation": "Minister for Finance, Planning and Development",
+    "portfolio": "Finance, Pensions and Pensionary Benefits, Planning & Development",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-30",
+    "name": "Thiru Srinath",
+    "designation": "Minister for Fisheries - Fishermen Welfare",
+    "portfolio": "Fisheries, Fisheries Development Corporation",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-31",
+    "name": "Tmt S. Kamali",
+    "designation": "Minister for Animal Husbandry",
+    "portfolio": "Animal Husbandry",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-32",
+    "name": "Thiru R. Kumar",
+    "designation": "Minister for Artificial Intelligence, Information Technology and Digital Services",
+    "portfolio": "Artificial Intelligence, Information Technology and Digital Services",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-33",
+    "name": "Thiru R.V. Ranjithkumar",
+    "designation": "Minister for Forests",
+    "portfolio": "Forests",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-34",
+    "name": "Thiru D. Logesh Tamilselvan",
+    "designation": "Minister for Commercial Taxes and Registration",
+    "portfolio": "Commercial Taxes, Registration and Stamp Act, Debt Relief including legislation on Money lending, Chits and Registration of Companies",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  },
+  {
+    "official_id": "TN-MIN-35",
+    "name": "Thiru Rajeev",
+    "designation": "Minister for Environment and Climate Change",
+    "portfolio": "Environment, Pollution Control Board, Climate Change",
+    "level": "state",
+    "state": "Tamil Nadu",
+    "verified": true,
+    "accountability_score": 100
+  }
+]

@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId} {
+      allow read, write: if request.auth.uid == userId;
+    }
+    match /issues/{issueId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.resource.data.ward_id ==
+           get(/databases/$(database)/documents/users/$(request.auth.uid)).data.home_ward_id;
+      allow update: if request.auth != null;
+      allow delete: if false;
+    }
+    match /officials/{officialId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    match /notices/{noticeId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && exists(/databases/$(database)/documents/officials/$(request.auth.uid));
+      allow update: if false;
+      allow delete: if false;
+    }
+    match /wards/{wardId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /wishes/{wishId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update: if request.auth != null;
+      allow delete: if false;
+    }
+    match /alerts/{alertId} {
+      allow read: if request.auth != null
+        && resource.data.user_id == request.auth.uid;
+      allow write: if false;
+    }
+    match /emergency_services/{serviceId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ward_id": "TN-CHN-100",
+        "ward_name": "Adyar",
+        "ward_number": 100,
+        "zone": "Adyar Zone",
+        "zone_number": 10,
+        "district": "Chennai",
+        "state": "Tamil Nadu"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.24,
+              12.99
+            ],
+            [
+              80.27,
+              12.99
+            ],
+            [
+              80.27,
+              13.015
+            ],
+            [
+              80.24,
+              13.015
+            ],
+            [
+              80.24,
+              12.99
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ward_id": "TN-CHN-108",
+        "ward_name": "Velachery",
+        "ward_number": 108,
+        "zone": "Adyar Zone",
+        "zone_number": 10,
+        "district": "Chennai",
+        "state": "Tamil Nadu"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2,
+              12.96
+            ],
+            [
+              80.235,
+              12.96
+            ],
+            [
+              80.235,
+              12.989
+            ],
+            [
+              80.2,
+              12.989
+            ],
+            [
+              80.2,
+              12.96
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ward_id": "TN-CHN-173",
+        "ward_name": "Anna Nagar",
+        "ward_number": 173,
+        "zone": "Anna Nagar Zone",
+        "zone_number": 8,
+        "district": "Chennai",
+        "state": "Tamil Nadu"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.19,
+              13.07
+            ],
+            [
+              80.225,
+              13.07
+            ],
+            [
+              80.225,
+              13.095
+            ],
+            [
+              80.19,
+              13.095
+            ],
+            [
+              80.19,
+              13.07
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ward_id": "TN-CHN-057",
+        "ward_name": "T Nagar",
+        "ward_number": 57,
+        "zone": "Teynampet Zone",
+        "zone_number": 9,
+        "district": "Chennai",
+        "state": "Tamil Nadu"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22,
+              13.03
+            ],
+            [
+              80.25,
+              13.03
+            ],
+            [
+              80.25,
+              13.055
+            ],
+            [
+              80.22,
+              13.055
+            ],
+            [
+              80.22,
+              13.03
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

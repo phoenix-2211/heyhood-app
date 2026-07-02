@@ -1,0 +1,5 @@
+[
+  { "official_id": "TN-SP-VNR", "name": "", "designation": "Superintendent of Police", "district": "Virudhunagar", "mobile": "9498101455", "phone": "04562-252300", "email": "spvnr.dgp@tn.gov.in", "level": "district_police", "state": "Tamil Nadu", "verified": true },
+  { "official_id": "TN-FIRE-VNR", "name": "", "designation": "District Fire and Rescue Officer", "district": "Virudhunagar", "mobile": "9445086288", "phone": "04562-252286", "email": "dovr.tnfrs@gov.in", "level": "district_fire", "state": "Tamil Nadu", "verified": true },
+  { "official_id": "TN-HEALTH-VNR", "name": "", "designation": "Deputy Director of Health Services", "district": "Virudhunagar", "mobile": "9341483611", "phone": "04562-252388", "email": "dphvnr@nic.in", "level": "district_health", "state": "Tamil Nadu", "verified": true }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "service_id": "TNP-ADY-01",
+    "name": "Adyar Police Station",
+    "type": "Police",
+    "ward_ids": ["TN-CHN-100"],
+    "district": "Chennai",
+    "phone": "044-2491-0199",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "HOSP-ADY-01",
+    "name": "Apollo Hospital",
+    "type": "Hospital",
+    "ward_ids": ["TN-CHN-100"],
+    "district": "Chennai",
+    "phone": "",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "TNF-ADY-01",
+    "name": "Adyar Fire Station",
+    "type": "Fire",
+    "ward_ids": ["TN-CHN-100"],
+    "district": "Chennai",
+    "phone": "101",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "TNP-VEL-01",
+    "name": "Velachery Police Station",
+    "type": "Police",
+    "ward_ids": ["TN-CHN-108"],
+    "district": "Chennai",
+    "phone": "",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "HOSP-VEL-01",
+    "name": "MIOT Hospital",
+    "type": "Hospital",
+    "ward_ids": ["TN-CHN-108"],
+    "district": "Chennai",
+    "phone": "",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "TNF-VEL-01",
+    "name": "Velachery Fire Station",
+    "type": "Fire",
+    "ward_ids": ["TN-CHN-108"],
+    "district": "Chennai",
+    "phone": "101",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "TNP-ANN-01",
+    "name": "Anna Nagar Police Station",
+    "type": "Police",
+    "ward_ids": ["TN-CHN-173"],
+    "district": "Chennai",
+    "phone": "044-2628-5700",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "HOSP-ANN-01",
+    "name": "Vijaya Hospital",
+    "type": "Hospital",
+    "ward_ids": ["TN-CHN-173"],
+    "district": "Chennai",
+    "phone": "",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "TNF-ANN-01",
+    "name": "Anna Nagar Fire Station",
+    "type": "Fire",
+    "ward_ids": ["TN-CHN-173"],
+    "district": "Chennai",
+    "phone": "101",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "TNP-TNG-01",
+    "name": "T Nagar Police Station",
+    "type": "Police",
+    "ward_ids": ["TN-CHN-057"],
+    "district": "Chennai",
+    "phone": "044-2434-0176",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "HOSP-TNG-01",
+    "name": "Kauvery Hospital",
+    "type": "Hospital",
+    "ward_ids": ["TN-CHN-057"],
+    "district": "Chennai",
+    "phone": "",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  },
+  {
+    "service_id": "TNF-TNG-01",
+    "name": "T Nagar Fire Station",
+    "type": "Fire",
+    "ward_ids": ["TN-CHN-057"],
+    "district": "Chennai",
+    "phone": "101",
+    "lat": "",
+    "lng": "",
+    "open_247": true
+  }
+]
