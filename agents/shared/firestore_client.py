@@ -55,7 +55,10 @@ if not firebase_admin._apps:
                     raise RuntimeError("Firebase credentials could not be loaded!")
     except Exception as e:
         import traceback
-        INIT_ERROR = RuntimeError(f"Failed to initialize Firebase (length={len(cred_json or '')}): {e}\n{traceback.format_exc()}")
+        cred_dict_val = locals().get("cred_dict", {})
+        key_repr = repr(cred_dict_val.get("private_key")) if isinstance(cred_dict_val, dict) else "N/A"
+        raw_repr = repr(cred_json)
+        INIT_ERROR = RuntimeError(f"Failed to initialize Firebase (length={len(cred_json or '')}): {e}\nKey repr: {key_repr}\nRaw repr: {raw_repr}\n{traceback.format_exc()}")
 
 def get_db():
     if INIT_ERROR:
