@@ -101,6 +101,7 @@ class FirestoreService {
   Stream<List<Wish>> getWishesByWard(String wardId) {
     return _db.collection('wishes')
         .where('ward_id', isEqualTo: wardId)
+        .where('status', isEqualTo: 'Active')
         .snapshots()
         .map((snap) {
           return snap.docs.map((doc) => Wish.fromFirestore(doc)).toList()
