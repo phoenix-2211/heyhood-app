@@ -90,17 +90,29 @@ class Issue {
       daysActive: map['days_active'] ?? 0,
       assignedTo: map['assigned_to'] ?? '',
       assignedRole: map['assigned_role'] ?? '',
-      resolutionDeadline: map['resolution_deadline'] != null ? (map['resolution_deadline'] as Timestamp).toDate() : null,
+      resolutionDeadline: map['resolution_deadline'] == null
+          ? null
+          : (map['resolution_deadline'] is Timestamp
+              ? (map['resolution_deadline'] as Timestamp).toDate()
+              : DateTime.tryParse(map['resolution_deadline'].toString())),
       contentHash: map['content_hash'] ?? '',
       duplicateOf: map['duplicate_of'],
       extensionCount: map['extension_count'] ?? 0,
       extensionHistory: List<dynamic>.from(map['extension_history'] ?? []),
       proofPhotoUrl: map['proof_photo_url'],
-      resolvedAt: map['resolved_at'] != null ? (map['resolved_at'] as Timestamp).toDate() : null,
+      resolvedAt: map['resolved_at'] == null
+          ? null
+          : (map['resolved_at'] is Timestamp
+              ? (map['resolved_at'] as Timestamp).toDate()
+              : DateTime.tryParse(map['resolved_at'].toString())),
       verified: map['verified'] ?? false,
       verificationScore: (map['verification_score'] as num?)?.toDouble() ?? 0.0,
       timeline: List<dynamic>.from(map['timeline'] ?? []),
-      createdAt: map['created_at'] != null ? (map['created_at'] as Timestamp).toDate() : null,
+      createdAt: map['created_at'] == null
+          ? null
+          : (map['created_at'] is Timestamp
+              ? (map['created_at'] as Timestamp).toDate()
+              : DateTime.tryParse(map['created_at'].toString())),
     );
   }
 

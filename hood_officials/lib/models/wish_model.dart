@@ -55,7 +55,11 @@ class Wish {
       status: map['status'] ?? 'Active',
       clusterId: map['cluster_id'],
       isTrending: map['is_trending'] ?? false,
-      createdAt: map['created_at'] != null ? (map['created_at'] as Timestamp).toDate() : null,
+      createdAt: map['created_at'] == null
+          ? null
+          : (map['created_at'] is Timestamp
+              ? (map['created_at'] as Timestamp).toDate()
+              : DateTime.tryParse(map['created_at'].toString())),
     );
   }
 
