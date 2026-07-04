@@ -7,6 +7,7 @@ import 'package:hey_hood/screens/profile/citizen_settings_screen.dart';
 import 'package:hey_hood/screens/shorts/shorts_feed_screen.dart';
 import 'package:hey_hood/screens/wish/wish_here_screen.dart';
 import 'package:hey_hood/screens/stats/neighborhood_stats_screen.dart';
+import 'package:hey_hood/screens/explore/news_short_detail_screen.dart';
 
 class HoodHomeScreen extends StatefulWidget {
   const HoodHomeScreen({super.key});
@@ -489,14 +490,11 @@ class _HoodHomeScreenState extends State<HoodHomeScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         itemCount: wishes.length,
                         itemBuilder: (context, index) {
-                          final wish = wishes[index];
                           return Padding(
                             padding: const EdgeInsets.only(right: 12.0),
                             child: _buildTrendingCard(
-                              wish.imageUrl.isNotEmpty ? wish.imageUrl : 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=500&q=80',
-                              wish.title,
-                              '${wish.supportCount} Support · ' + wish.category,
-                              wish.supportCount >= 100 ? green : amber,
+                              wishes,
+                              index,
                             ),
                           );
                         },
@@ -635,17 +633,24 @@ class _HoodHomeScreenState extends State<HoodHomeScreen> {
   }
 
   Widget _buildTrendingCard(
-    String imageUrl,
-    String title,
-    String subtitle,
-    Color indicatorColor,
+    List<Wish> wishes,
+    int index,
   ) {
+    final wish = wishes[index];
+    final imageUrl = wish.imageUrl.isNotEmpty ? wish.imageUrl : 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=500&q=80';
+    final title = wish.title;
+    final subtitle = '${wish.supportCount} Support · ' + wish.category;
+    final indicatorColor = wish.supportCount >= 100 ? green : amber;
+
     return GestureDetector(
       onTap: () {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Support registered for $title!'),
-            backgroundColor: green,
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => NewsShortDetailScreen(
+              wishes: wishes,
+              initialIndex: index,
+            ),
           ),
         );
       },
