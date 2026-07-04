@@ -77,8 +77,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 gradient: RadialGradient(
                   colors: [
                     Colors.transparent,
-                    Colors.black.withOpacity(0.4),
-                    Colors.black.withOpacity(0.9),
+                    Colors.black.withOpacity(0.15),
+                    Colors.black.withOpacity(0.55),
                   ],
                   stops: const [0.0, 0.5, 1.0],
                 ),
@@ -93,8 +93,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   end: Alignment.bottomCenter,
                   colors: [
                     Colors.transparent,
-                    Colors.black.withOpacity(0.6),
-                    darkBg,
+                    Colors.black.withOpacity(0.25),
+                    darkBg.withOpacity(0.88),
                   ],
                   stops: const [0.0, 0.4, 1.0],
                 ),
