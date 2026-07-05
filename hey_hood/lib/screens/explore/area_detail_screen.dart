@@ -55,7 +55,9 @@ class _AreaDetailScreenState extends State<AreaDetailScreen> with SingleTickerPr
     if (wardId == "TN-VRD-002") {
       return "https://images.unsplash.com/photo-1596422846543-75c6fc18a523?auto=format&fit=crop&w=800&q=80"; // Virudhunagar Market
     }
-    return "https://picsum.photos/seed/ward-banner-$wardId/800/400";
+    final parts = wardId.split('-');
+    final wardNum = parts.isNotEmpty ? parts.last : '100';
+    return "https://picsum.photos/seed/chennai-street-$wardNum/800/400";
   }
 
   void _startCall(String title, String number) {

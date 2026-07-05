@@ -5,6 +5,7 @@ import 'package:hey_hood/screens/explore/explore_screen.dart';
 import 'package:hey_hood/screens/alerts/alerts_screen.dart';
 import 'package:hey_hood/screens/kyh/kyh_screen.dart';
 import 'package:hey_hood/screens/report/report_issue_modal.dart';
+import 'package:hey_hood/services/firestore_service.dart';
 
 class HomeDashboard extends StatefulWidget {
   const HomeDashboard({super.key});
@@ -16,13 +17,7 @@ class HomeDashboard extends StatefulWidget {
 class _HomeDashboardState extends State<HomeDashboard> {
   int _currentIndex = 0;
 
-  final List<Widget> _pages = [
-    const HoodHomeScreen(),
-    const ExploreScreen(),
-    const SizedBox.shrink(), // Placeholder for center button action
-    const AlertsScreen(),
-    const KyhScreen(),
-  ];
+
 
   void _onTabSelected(int index) {
     if (index == 2) {
@@ -45,13 +40,25 @@ class _HomeDashboardState extends State<HomeDashboard> {
 
   @override
   Widget build(BuildContext context) {
+    final pages = [
+      HoodHomeScreen(key: ValueKey(FirestoreService.currentWardId)),
+      ExploreScreen(
+        onWardChanged: () {
+          setState(() {});
+        },
+      ),
+      const SizedBox.shrink(), // Placeholder for center button action
+      AlertsScreen(key: ValueKey(FirestoreService.currentWardId)),
+      KyhScreen(key: ValueKey(FirestoreService.currentWardId)),
+    ];
+
     return Scaffold(
       backgroundColor: const Color(0xFF0A0A0A),
       body: Stack(
         children: [
           IndexedStack(
             index: _currentIndex == 2 ? 0 : _currentIndex, // Safe fallback
-            children: _pages,
+            children: pages,
           ),
           Positioned(
             left: 0,

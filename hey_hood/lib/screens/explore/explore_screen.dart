@@ -6,7 +6,8 @@ import 'package:hey_hood/models/models.dart';
 import 'package:hey_hood/screens/explore/area_detail_screen.dart';
 
 class ExploreScreen extends StatefulWidget {
-  const ExploreScreen({super.key});
+  final VoidCallback? onWardChanged;
+  const ExploreScreen({super.key, this.onWardChanged});
 
   @override
   State<ExploreScreen> createState() => _ExploreScreenState();
@@ -60,6 +61,9 @@ class _ExploreScreenState extends State<ExploreScreen> {
       FirestoreService.currentWardId = ward.wardId;
       FirestoreService.currentWardName = ward.wardName;
     });
+    if (widget.onWardChanged != null) {
+      widget.onWardChanged!();
+    }
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text('Switched active ward to ${ward.wardName} (Ward ${ward.wardNumber})'),

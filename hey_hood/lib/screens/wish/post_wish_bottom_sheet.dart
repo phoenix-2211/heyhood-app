@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hey_hood/core/constants/app_colors.dart';
 import 'package:hey_hood/screens/wish/select_gallery_screen.dart';
 import 'package:hey_hood/screens/wish/wish_here_screen.dart'; // import to get WishItem definition
+import 'package:hey_hood/services/agent_service.dart';
 
 class PostWishBottomSheet extends StatefulWidget {
   final Function(WishItem) onWishAdded;
@@ -72,18 +73,36 @@ class _PostWishBottomSheetState extends State<PostWishBottomSheet> {
       const SnackBar(
         content: Text('Polishing description with AI...'),
         backgroundColor: saffron,
-        duration: Duration(milliseconds: 800),
+        duration: Duration(milliseconds: 1500),
       ),
     );
 
-    await Future.delayed(const Duration(milliseconds: 1000));
-
-    if (mounted) {
-      setState(() {
-        String draft = _descController.text.trim();
-        _descController.text = 
-            "COMMUNITY PROJECT REQUEST: $draft\n\nThis installation will significantly enhance local safety, accessibility, and neighborhood cohesion. We urge ward authorities to review and allocate infrastructure funds.";
-      });
+    try {
+      final polished = await AgentService.polishText(
+        rawText: _descController.text.trim(),
+        context: 'Civic improvement suggestion/wish for a neighborhood in Chennai.',
+      );
+      
+      if (mounted) {
+        setState(() {
+          _descController.text = polished;
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Description polished! ✦'),
+            backgroundColor: green,
+          ),
+        );
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Polishing failed. Using draft.'),
+            backgroundColor: danger,
+          ),
+        );
+      }
     }
   }
 
@@ -107,8 +126,14 @@ class _PostWishBottomSheetState extends State<PostWishBottomSheet> {
     if (mounted) {
       setState(() {
         _isGeneratingImage = false;
-        // Mock set a gorgeous generated image url based on prompt
-        _generatedImageUrl = 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=400';
+        String prompt = _aiController.text.toLowerCase();
+        if (prompt.contains("chess")) {
+          _generatedImageUrl = 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500'; // Chess board
+        } else if (prompt.contains("bench") || prompt.contains("seat")) {
+          _generatedImageUrl = 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=500'; // Park benches
+        } else {
+          _generatedImageUrl = 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500'; // Indian public park
+        }
       });
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(

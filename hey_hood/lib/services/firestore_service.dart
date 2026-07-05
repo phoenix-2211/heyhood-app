@@ -174,13 +174,16 @@ class FirestoreService {
 
   // --- ALERTS METHODS ---
 
-  // Stream alerts for a specific user
+  // Stream alerts for a specific user and active ward (filtered client-side to avoid composite index requirement)
   Stream<List<Alert>> getAlerts(String userId) {
     return _db.collection('alerts')
         .where('user_id', isEqualTo: userId)
         .snapshots()
         .map((snap) {
-          return snap.docs.map((doc) => Alert.fromFirestore(doc)).toList()
+          return snap.docs
+              .map((doc) => Alert.fromFirestore(doc))
+              .where((alert) => alert.wardId == currentWardId)
+              .toList()
             ..sort((a, b) => (b.createdAt ?? DateTime.now()).compareTo(a.createdAt ?? DateTime.now()));
         });
   }

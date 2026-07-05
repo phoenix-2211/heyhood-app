@@ -404,51 +404,63 @@ class _WishHereScreenState extends State<WishHereScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Container(
-                padding: const EdgeInsets.all(16),
+                clipBehavior: Clip.antiAlias,
                 decoration: BoxDecoration(
                   color: darkSurface,
                   borderRadius: BorderRadius.circular(12),
-                  border: Border(
-                    left: const BorderSide(color: saffron, width: 4),
-                    top: BorderSide(color: Colors.white.withOpacity(0.08)),
-                    right: BorderSide(color: Colors.white.withOpacity(0.08)),
-                    bottom: BorderSide(color: Colors.white.withOpacity(0.08)),
+                  border: Border.all(
+                    color: Colors.white.withOpacity(0.08),
                   ),
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Stack(
                   children: [
-                    Text(
-                      'TRENDING IN YOUR HOOD',
-                      style: GoogleFonts.hankenGrotesk(
-                        color: saffron,
-                        fontSize: 10,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 1.0,
-                      ),
+                    // Left strip from Stitch design
+                    Positioned(
+                      left: 0,
+                      top: 0,
+                      bottom: 0,
+                      width: 4,
+                      child: Container(color: saffron),
                     ),
-                    const SizedBox(height: 8),
-                    Text(
-                      'New Public Library Wing',
-                      style: GoogleFonts.inter(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14,
-                      ),
-                    ),
-                    const SizedBox(height: 6),
-                    Row(
-                      children: [
-                        const Icon(Icons.local_fire_department, color: green, size: 14),
-                        const SizedBox(width: 4),
-                        Text(
-                          '1.2k supporting · Growing fast',
-                          style: GoogleFonts.inter(
-                            color: green,
-                            fontSize: 11,
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 16, 16, 16),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'TRENDING IN YOUR HOOD',
+                            style: GoogleFonts.hankenGrotesk(
+                              color: saffron,
+                              fontSize: 10,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1.0,
+                            ),
                           ),
-                        ),
-                      ],
+                          const SizedBox(height: 8),
+                          Text(
+                            'New Public Library Wing',
+                            style: GoogleFonts.inter(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14,
+                            ),
+                          ),
+                          const SizedBox(height: 6),
+                          Row(
+                            children: [
+                              const Icon(Icons.local_fire_department, color: green, size: 14),
+                              const SizedBox(width: 4),
+                              Text(
+                                '1.2k supporting · Growing fast',
+                                style: GoogleFonts.inter(
+                                  color: green,
+                                  fontSize: 11,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
