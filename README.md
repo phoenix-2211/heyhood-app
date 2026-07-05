@@ -14,6 +14,23 @@
 
 ---
 
+## 📸 Screenshots & Visual Assets
+
+<p align="center">
+  <img src="screenshots/area_detail_screen.png" width="35%" alt="Area Detail Screen" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/news_short_detail.png" width="35%" alt="News Detail Screen" />
+</p>
+
+### 🎨 Custom AI-Generated Illustrations
+<p align="center">
+  <img src="screenshots/ambulance.png" width="25%" alt="Ambulance" />
+  <img src="screenshots/fire_station.png" width="25%" alt="Fire Station" />
+  <img src="screenshots/bus_stop.png" width="25%" alt="Bus Stop" />
+</p>
+
+---
+
 ## 📱 Download the Apps (Release APKs)
 Ready-to-use binaries are included directly in the root of this repository:
 
