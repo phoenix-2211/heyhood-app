@@ -89,14 +89,9 @@ node seed_demo_data.js
 
 ## 🎨 System Architecture
 
-```mermaid
-graph TD
-    Citizen(Citizen App) -->|Submit Issue/Wish| Firestore[(Cloud Firestore)]
-    Officials(Officials App) -->|Update Status/Notices| Firestore
-    Firestore -->|Trigger webhook| Agents[AI Agents Vercel/Railway]
-    Agents -->|Verify/Polish/Deduplicate| Firestore
-    Agents -->|Generate Visual Mockups| Citizen
-```
+<p align="center">
+  <img src="screenshots/hey_hood_architecture.png" width="90%" alt="Hey Hood Architecture Diagram" />
+</p>
 
 ---
 <p align="center">Made with ❤️ for smart, transparent, and responsive local governance.</p>
