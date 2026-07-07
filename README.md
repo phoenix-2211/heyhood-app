@@ -54,13 +54,43 @@ The platform utilizes a microservice architecture of specialized, hosted AI agen
 ---
 
 ## 🛠️ Project Structure
-```directory
-├── hey_hood/                # Flutter App for Citizens (Issues, Wishes, Alerts)
-├── hood_officials/          # Flutter App for Ward Officials (Dashboard, Notices)
-├── backend/                 # Cloud functions & DB seeding scripts
-├── Database/                # Permissive security rules & geo-boundaries
-├── hey_hood.apk             # Android Release APK (Citizen App)
-└── hood_officials.apk       # Android Release APK (Officials App)
+
+```text
+hey-hood/
+├── agents/                           # Local Python LLM agent microservices
+│   ├── duplicate_detection/          # Agent that identifies matching/similar citizen complaints
+│   ├── escalation/                   # Agent that escalates overdue issues to higher officials
+│   ├── fake_news/                    # Agent that moderates mismatched report images and text
+│   ├── issue_routing/                # Agent that automatically routes issues to the right department
+│   ├── shared/                       # Shared utility functions and database connections for agents
+│   ├── text_polish/                  # Agent that edits and polishes citizen descriptions
+│   └── wish_matching/                # Agent that aligns citizen wishes with ward facilities
+├── backend/                          # Firebase Backend deployment configuration
+│   ├── functions/                    # Cloud functions and database seeding scripts
+│   ├── .firebaserc                   # Firebase project active target configuration
+│   ├── firebase.json                 # Firebase deployment configurations and rewrites
+│   └── firestore.rules               # Security rules configuration for Firestore database
+├── Database/                         # Master database setup, schemas, and seeding resources
+│   ├── geo_data/                     # Chennai and Virudhunagar ward boundary coordinates
+│   ├── seed_data/                    # Initial mocks for users, issues, wishes, and notices
+│   ├── seed_scripts/                 # Automated seeding script for Firestore setup
+│   ├── dummy_credentials.json        # Placeholder Firebase service credentials for local tests
+│   └── firestore.rules               # Copy of current active database security rules
+├── hey_hood/                         # Citizen App Flutter codebase
+│   ├── android/                      # Native Android build configurations and platform setup
+│   ├── assets/                       # Custom logos, icons, and static graphics
+│   ├── lib/                          # Main Flutter application logic, screens, and models
+│   └── pubspec.yaml                  # Citizen app package and asset dependencies
+├── hood_officials/                   # Officials App Flutter codebase
+│   ├── android/                      # Native Android build configurations and platform setup
+│   ├── assets/                       # Custom logos, icons, and static graphics
+│   ├── lib/                          # Main Flutter application logic, screens, and models
+│   └── pubspec.yaml                  # Officials app package and asset dependencies
+├── screenshots/                      # UI preview captures and custom visuals for documentation
+├── .gitignore                        # Git ignore patterns for build folders and secrets
+├── hey_hood.apk                      # Ready-to-install Android release build for citizens
+├── hood_officials.apk                # Ready-to-install Android release build for officials
+└── README.md                         # Project documentation and ecosystem architecture details
 ```
 
 ---
