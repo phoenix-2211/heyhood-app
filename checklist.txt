@@ -1,0 +1,60 @@
+======================================================================
+                  HEY HOOD - DEPLOYMENT & VERIFICATION CHECKLIST
+======================================================================
+
+Use this checklist to verify that all components, databases, configurations, 
+and applications are correctly packaged and running.
+
+[ ] 1. Folder & File Structure Verification
+-------------------------------------------
+Verify the following directories and files exist in the root folder:
+  - [ ] hey_hood/             (Citizen Flutter codebase)
+  - [ ] hood_officials/       (Officials Flutter codebase)
+  - [ ] backend/              (Firebase configuration & seeding scripts)
+  - [ ] Database/             (Master database schemas & geoJSON data)
+  - [ ] agents/               (Python LLM agent microservices)
+  - [ ] screenshots/          # Embedded UI pre-rendered screen captures
+  - [ ] hey_hood.apk          # Pre-built release binary for citizens
+  - [ ] hood_officials.apk    # Pre-built release binary for officials
+  - [ ] README.md             # Capstone documentation
+
+[ ] 2. Package & Dependency Installation
+----------------------------------------
+Before launching the apps, restore all dependencies:
+  - [ ] Navigate to 'hey_hood' and run:
+          flutter pub get
+  - [ ] Navigate to 'hood_officials' and run:
+          flutter pub get
+  - [ ] Navigate to 'backend/functions' and run:
+          npm install
+
+[ ] 3. Cloud Database Initialization & Seeding
+----------------------------------------------
+Set up and populate the Cloud Firestore database:
+  - [ ] Verify that permissive rules are deployed to Firebase Firestore Console:
+          allow read, write: if true;
+  - [ ] Populate the database by running the seed script:
+          cd backend/functions
+          node seed_demo_data.js
+  - [ ] Check Firebase console to confirm collections ('wards', 'users', 
+        'issues', 'wishes', 'notices', 'alerts', 'officials') are populated.
+
+[ ] 4. Running the Applications
+-------------------------------
+Verify that the applications launch cleanly on Google Chrome:
+  - [ ] Citizen App:
+          cd hey_hood
+          flutter run -d chrome
+  - [ ] Officials App:
+          cd hood_officials
+          flutter run -d chrome
+  - [ ] Verify that onboarding "SKIP" bypasses authentication and successfully 
+        loads the main dashboards in both apps.
+
+[ ] 5. AI Agent Microservice Verification
+-----------------------------------------
+Confirm that the cloud-hosted agent endpoints are accessible:
+  - [ ] Check if the Text Polish Agent is responding:
+        https://hey-hood-agent-text-polish-5n2p.vercel.app/run
+  - [ ] Check if the Duplicate Detector is responding:
+        https://hey-hood-agent-duplicate-detection.vercel.app/run
