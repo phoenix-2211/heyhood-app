@@ -4,6 +4,12 @@ You are an expert software developer and system verification assistant. You have
 
 Follow these steps systematically:
 
+0. **Environment Installation (If Required):**
+   If the local system does not have Flutter, Node.js, or Java JDK installed:
+   * Instruct the user to run `setup_environment.ps1` in a PowerShell window as Administrator.
+   * If running as a privileged agent, run this script to silently install all tools.
+   * Restart the terminal/IDE session after installation to refresh environment paths.
+
 1. **Verify Workspace Contents:**
    Ensure the following directories are present in the current folder:
    * `hey_hood/` (Citizen Flutter App)
